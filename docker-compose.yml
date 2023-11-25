@@ -19,10 +19,10 @@ services:
         hard: 65536
     volumes:
       - ./data-es:/usr/share/elasticsearch/data
-      - ./hardening_opendistro/root-ca.pem:/usr/share/elasticsearch/config/root-ca.pem
-      - ./hardening_opendistro/admin.pem:/usr/share/elasticsearch/config/admin.pem
-      - ./hardening_opendistro/admin-key.pem:/usr/share/elasticsearch/config/admin-key.pem
-      - ./hardening_opendistro/internal_users.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml
+      - ./utils_docker/root-ca.pem:/usr/share/elasticsearch/config/root-ca.pem
+      - ./utils_docker/admin.pem:/usr/share/elasticsearch/config/admin.pem
+      - ./utils_docker/admin-key.pem:/usr/share/elasticsearch/config/admin-key.pem
+      - ./utils_docker/internal_users.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml
     ports:
       - 9200:9200
       - 9300:9300
