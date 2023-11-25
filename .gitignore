@@ -1,0 +1,4 @@
+data-es/*
+!data-es/.gitkeep
+docker/data/*
+!docker/data/.gitkeep
