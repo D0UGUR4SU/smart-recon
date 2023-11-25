@@ -9,7 +9,8 @@ Para utilizar é necessário se atentar ao passo a passo:
 3. Libere as permissões para todas as pastas do projeto, com o comando: sudo chown 1000:1000 *
 4. Agora já podemos rodar um docker-compose up para subir o nosso open_distro (Importante ter configurado o docker para não precisar rodar com sudo)
 5. Confirme que o opendistro rodou certinho verificando se obteve esse retorno:
-
-```
-database-node1    | [2023-11-25T14:27:12,613][INFO ][c.a.o.s.c.ConfigurationRepository] [database-node1] Node 'database-node1' initialized
-```
+   ```
+   database-node1    | [2023-11-25T14:27:12,613][INFO ][c.a.o.s.c.ConfigurationRepository] [database-node1] Node 'database-node1' initialized
+   ```
+6. Crie os indices dentro do open_distro utilizando o script na pasta scripts/indices
+7. Agora já é possível utilizar o arquivo ./start_bounty.sh
