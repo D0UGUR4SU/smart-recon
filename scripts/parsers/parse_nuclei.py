@@ -31,7 +31,6 @@ scanner = 'nuclei'
 
 def executa(sistema):
     subprocess.check_output('docker run --rm --name '+container_name+' -v ./docker/data/'+target+'/temp:/data kali-tools:2.0 nuclei -u '+sistema+' -t /root/nuclei-templates/ -o /data/'+saida+' || true', shell=True)
-    print('docker run --rm --name '+container_name+' -v ./docker/data/'+target+'/temp:/data kali-tools:2.0 nuclei -u '+sistema+' -t /root/nuclei-templates/ -o /data/'+saida+' -json')
 
 def parse():
     executa(sistema)
